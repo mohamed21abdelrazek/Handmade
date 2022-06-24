@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta http-equiv="X-UA-compatiable" content="IE-edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link rel="stylesheet" href="style.css">
+<title>Shoghl Masry</title>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script src="https://www.w3schools.com/icons/icons_reference.asp"></script>
+</head>
+<body onload="img()" >
+<nav>
+  <label>
+  <input type="checkbox" id="check">
+  <label for="check" class="checkbtn">
+  <i class="fas fa-bars"></i>
+</label>
+<label class="logo"> <img src="image/logo1.jpeg"> </label>
+<ul>
+<li><a class="active" href="#">Home</a></li>
+<li><a href="log in.html">Login</a></li>
+</div>
+<div class="dropdown">
+    <button class="dropbtn">Catogries</button>
+    <div class="dropdown-content">
+        <a href="#">Statues </a> 
+        <a href="#">Art And Craft </a> 
+        <a href="#">Porclain Craft </a>
+        <a href="#">Wicker Craft </a>
+        
+    </div>
+  </div>
+  <li><input class="search" type="search" placeholder="Search" ></li>   
+  <a href="#">
+    <ion-icon name="cart"></ion-icon> </a>
+</ul>
+</nav>
+<div class="section">   
+<img src="image/image6.jpeg" id="slideImg">    
+<div class="overlay">
+<div class="content">
+<p>Our Products are unique.we are partners in making modern and style products.
+<br/>let's start buying our products</p> 
+<div>
+<a href="products.html">   
+<button type="button" > New Arrivals</button></a> 
+
+</div>
+</div>
+</div>
+</div> 
+</section>
+<script>
+var slideImg = document.getElementById("slideImg");
+var image = new Array(
+"image/image6.jpeg",
+"image/image5.jpeg",
+"image/image2.jpeg",
+"image/image4.jpeg"
+);
+var len = image.length;
+var i=0;
+function img(){
+if(i>len-1){
+i=0;
+}
+slideImg.src = image[i];
+i++;
+setTimeout('img()',3000);
+}
+</script>
+<script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>

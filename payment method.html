@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Payment Method</title>
+<style>
+.paymentInbox{
+ width: 390px;
+height: 560px;
+background-color:beige;
+top: 50%;
+left: 50%;
+border-radius: 15px;
+position: absolute;
+transform: translate(-50%,-50%);
+box-sizing: border-box;
+padding: 25px 30px;
+ }   
+
+ h1{
+ margin: 0;
+padding: 0 0 20px;
+text-align: center;
+font-size: 29px;
+ }
+
+       .radio-group label{
+           display: flex;
+           flex-wrap: wrap;
+           padding: 15px;
+           font-size: 23px;
+       }
+       h5{
+           padding-top: -6px;
+       }
+       p{
+           font-size: 20px;
+       }
+   
+.code{
+    padding-top: 2px;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1rem;
+}
+.btn-1{
+    height: 36px;
+    width: 70px;
+    background: rgb(219, 208, 208);
+    border-radius: 5px;
+}
+.btn-2 {
+    border-radius: 5px;
+    margin: 35px;
+    height: 40px;
+    width: 230px;
+    font-size: 17px;
+    cursor: pointer;
+    background: rgb(219, 208, 208);
+  }
+  .btn-2 a{
+    text-decoration: none;
+  }
+.btn-2:hover , .btn-1:hover{
+    background: #0082e6;
+}
+</style>
+</head>
+<body>
+    <div class="paymentInbox">
+        <h1>Select A Payment Method</h1>
+        <form action="payment.php" method="post">
+            <div class="radio-group">
+                <label class="label" >
+                  <input type="radio" value="visa" name="gander">
+                  Visa   
+                 
+                </label>
+                 
+                <label >
+                  <input type="radio" value="visa" name="gander">
+                  Meeza
+                </label>
+
+                <label >
+                  <input type="radio" value="visa" name="gander">
+                  Cash On Delivery (COD)<br>
+                  <h5>pay by cash on delivery. COD fees on EGP 9 may apply</h5>
+                </label>
+      </div>
+  
+
+  
+       <p> Gift Cards and Promotional Codes</p> 
+       <div class="code"> 
+        <label for="codes">
+        <input type="number"placeholder="Enter code"  name="number"
+        style ="-webkit-appearance: none; height: 30px; width: 210px;" />
+        <style media="screen">
+            input::-webkit-inner-spin-button,
+            input::-webkit-outer-spin-button {
+                -webkit-appearance: none;
+            }
+
+
+</style>        
+
+    </label>
+        <button class="btn-1">Apply</button> 
+     </div>
+     
+     <button class="btn-2"><a href="paymend information.html">Continue </a></button>
+    </form>
+</div>      
+</body>
+</html>

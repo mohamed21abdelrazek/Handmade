@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Payment Information</title>
+<link rel="stylesheet" href="#">
+<style>
+    * {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body {
+display: flex;
+height: 100vh;
+justify-content: center;
+align-items: center;
+padding: 10px;
+background:white;
+}
+.container {
+max-width: 700px;
+width: 100%;
+background: beige;
+padding: 25px 30px;
+border-radius: 5px;
+}
+.container .title::before {
+position: absolute;
+left: 0;
+height: 3px;
+width: 30px;
+}
+.container form .user-details {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+margin: 20px 0 12px 0;
+font-size: 23px;
+}
+form .user-details .input-box {
+margin-bottom: 15px;
+width: calc(100% /2 - 20px);
+}
+.user-details .input-box .detaials {
+display: block;
+font-weight: 500;
+margin-bottom: 5px;
+}
+.user-details .input-box input , .date{
+height: 45px;
+width: 100%;
+outline: none;
+border-radius: 5px;
+padding-left: 15px;
+font-size: 16px;
+border: 1px solid;
+border-bottom-width: 2px;
+}
+.image img{
+    height: 100px;
+    width: 200px;
+    padding: 14px;
+    margin-bottom: 4px;
+}
+.date {
+   height: 40px;
+   width: 60%;
+   border-radius: 5px;
+   font-size: 16px;
+   border: 1px solid;
+   border-bottom-width: 2px; 
+}
+h4{
+    padding-top: 4px;
+}
+.button {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 1rem;
+    align-items: center;
+    }
+    
+     .button a{
+    flex: 1 1 16rem;    
+    padding: 10px;
+    font-size: 18px;
+    color: white;
+    border: 2px solid #444;
+    background: #0082e6;
+    border-radius: 10px;
+    transition: 0.5s;
+    text-align: center;
+    text-decoration: none;
+    }
+ .button a:hover{
+background: #444;
+}
+</style>
+</head>
+<body>
+    <div class="container">
+        <form action="#" method="post">
+        <div class="user-details">
+        <div class="input-box">
+        <span class="details">First Name</span>
+        <input type="text" placeholder="Enter your first name" required name="firstName" />
+        </div>       
+        <div class="input-box">
+        <span class="details">Last Name</span>
+        <input type="text"placeholder="Enter your last name" required name="LastName"/>
+        </div>        
+        <div class="input-box">
+            <span class="details">Card Number</span>
+            <input type="password"placeholder="xxxx xxxx xxxx xxxx xxx" required name="Card Number"/>
+            <style media="screen">
+                input::-webkit-inner-spin-button,
+                input::-webkit-outer-spin-button {
+                -webkit-appearance: none;
+                }
+                </style>    
+        </div>    
+            
+            <div class="input-box">
+                <span class="details">CVV</span>
+                <input type="password"placeholder="xxx" required name="CVV"/>
+                <style media="screen">
+                    input::-webkit-inner-spin-button,
+                    input::-webkit-outer-spin-button {
+                    -webkit-appearance: none;
+                    }
+                    </style>  
+                </div>  
+<div class="image">
+<img src="image/R3.jpeg">
+<img src="image/R.png">
+<img src="image/R2.jpg">
+</div>
+
+<h4>valid until</h4>
+<div class="date2">
+    <span class="details">Month</span>
+    <select class="date" id="date" >
+        <option>January</option>
+        <option>February</option>
+        <option>March</option>
+        <option>April</option>
+        <option>May</option>
+        <option>June</option>
+        <option>July</option>
+        <option>August</option>
+        <option>September</option>
+        <option>October</option>
+        <option>November</option>
+        <option>December</option>
+    </select>
+    </div>
+    <div class="date2">
+        <span class="details">Year</span>
+        <select class="date" id="date" >
+            <option>2022</option>
+            <option>2023</option>
+            <option>2024</option>
+            <option>2025</option>
+            <option>2026</option>
+            <option>2027</option>
+            <option>2028</option>
+            <option>2029</option>
+            <option>2030</option>
+            </select>
+        </div>
+
+        </div>
+
+        <div class="button">
+            <a href="#" class="Cancel">Cancel</a>
+            <a href="#" class="Submit">submit</a>
+        </div>
+        </form>
+    </div>
+    
+</body>
+</html>    

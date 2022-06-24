@@ -1,0 +1,230 @@
+*{
+padding: 0;
+margin: 0;
+text-decoration: none;
+list-style: none;
+box-sizing: border-box;
+text-transform: capitalize;
+transition: all .2s linear;
+}
+html{
+font-size: 79.5%;
+overflow-x: hidden;
+}
+nav {
+    background: beige;
+    height: 80px;
+    width: 100%;
+    }
+   .logo img{
+        height: 60px;
+        width: 210px;
+        margin: 8px;
+        margin-left: 5em;
+    }
+    nav ul {
+    float: right;
+    margin-right: 20px;
+    }
+    nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+    }
+    nav ul li a {
+    color: black;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    }
+    nav li .search{
+        width: 230px;
+        height: 37px;
+        border-radius: 20px;
+       text-align: center;
+       }
+
+    .cart a {
+   font-size: 25px;
+    cursor: pointer;
+    text-decoration: none;
+    }
+.container{
+max-width: 1200px;
+margin: 0 auto;
+padding: 3rem 2rem;
+}
+.container .title{
+font-size: 39px;
+color: #444;
+margin-bottom: 30px;
+text-transform: uppercase;
+text-align: center;
+}
+.container .product-container{
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+justify-content: center;
+gap:2rem;
+}
+.container .product-container .product{
+text-align: center;
+padding: 3rem 2rem;
+background: beige;
+box-shadow: 0.5rem 1rem rgba(0, 0, 0, .1);
+cursor: pointer;
+outline: 0.1rem solid blue;
+outline-offset: -1rem;
+} 
+.container .product-container .product:hover{
+outline: 0.2rem solid red;
+outline-offset:0;
+}
+.container .product-container .product img{
+height: 250px;
+width: 310px;    
+}
+.container .product-container .product:hover img{
+transform: scale(1);
+}
+.container .product-container .product h3{
+font-size: 20px;
+color: black;
+padding: 10px;
+}
+.container .product-container .product .price{
+font-size: 25px;
+color: black;
+}
+.products-preview{
+position: fixed;
+top: 0;
+left: 0;
+min-height:100vh ;
+width: 100%;
+background: rgba(0, 0, 0, 0.8);
+display: none;
+align-items: center;
+justify-content: center;
+}
+.products-preview .preview{
+display: none;
+padding: 2rem;
+text-align: center;
+background: white;
+position: relative;
+margin: 2rem;
+width: 40rem;
+}
+.products-preview .preview.active{
+display: inline-block;
+}
+.products-preview .preview img{
+height: 30rem;
+width: 290px;
+}
+.products-preview .preview .fa-times {
+position: absolute;
+top: 1rem;
+right:1.5rem ; 
+cursor: pointer;
+color: #444;
+font-size: 3rem;
+} 
+
+.products-preview .preview h3{
+color: #444;
+padding: 15px 0;
+font-size: 18px;
+}
+.products-preview .preview p{
+line-height: 1.5;
+padding: 10px 0;
+font-size: 17px;
+color: #444;
+}
+.products-preview .preview .price{
+padding: 10px 0;
+font-size: 17px;
+color: green;
+}
+.products-preview .preview .button form{
+    display: contents;
+    
+}
+.products-preview .preview .button {
+    
+display: flex;
+flex-wrap: wrap;
+gap: 1.5rem;
+margin-top: 1rem;
+align-items: center;
+}
+
+.products-preview .preview .button a{
+flex: 1 1 16rem;    
+padding: 10px;
+font-size: 18px;
+color: white;
+border: 2px solid #444;
+background: #0082e6;
+border-radius: 10px;
+transition: 0.5s;
+}
+.products-preview .preview .button a:hover{
+background: #444;
+}
+
+footer{
+color: white;
+margin-top: 15px;
+margin-bottom: 10px;
+position: relative;
+width: 100%;
+background: beige;
+min-height: 200px;
+padding: 20px 100px;
+text-align: center;
+flex-direction: column;
+}
+footer .social_icon,footer .menu {
+position: relative;
+display: flex;
+align-items: center;
+justify-content: center;
+margin: 10px 0;
+flex-wrap: wrap;
+}
+footer .social_icon li,footer .menu li {
+list-style: none;
+}
+footer .social_icon li a{
+font-size: 37px;
+color: black;
+margin: 0 10px;
+display: inline-block;
+transition: 0.5s;
+}
+footer .social_icon li a:hover{
+transform: translateY(-10px);
+}
+footer .menu li a{
+font-size: 24px;
+color: black;
+margin: 0 10px;
+display: inline-block;
+transition: 0.5s;
+text-decoration: none;
+opacity: 0.75;
+}
+footer .menu li a:hover{
+opacity: 1;
+}
+footer .menu li a.active {
+background:#1b9bff;
+transition: 0.5s;
+}
+footer p{
+    color: black;
+}   
